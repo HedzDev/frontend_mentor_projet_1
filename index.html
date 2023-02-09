@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link href="/dist/style.css" rel="stylesheet" />
+    <title>Frontend Mentor | News homepage</title>
+  </head>
+  <body>
+    <div
+      class="w-10/12 mx-auto mobile:max-tablet:w-full mobile:max-tablet:px-5 relative"
+    >
+      <header class="flex justify-between py-14">
+        <img
+          class="min-w-11 max-h-10 object-cover"
+          src="./assets/images/logo.svg"
+          alt="logo"
+        />
+        <nav class="mobile:max-tablet:hidden">
+          <ul class="flex flex-row space-x-5">
+            <li>
+              <a href="" class="text-slate-500 hover:text-orange-500">Home</a>
+            </li>
+            <li>
+              <a href="" class="text-slate-500 hover:text-orange-500">New</a>
+            </li>
+            <li>
+              <a href="" class="text-slate-500 hover:text-orange-500"
+                >Popular</a
+              >
+            </li>
+            <li>
+              <a href="" class="text-slate-500 hover:text-orange-500"
+                >Trending</a
+              >
+            </li>
+            <li>
+              <a href="" class="text-slate-500 hover:text-orange-500"
+                >Categories</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <button
+          id="hamburger-button"
+          class="absolute top-14 right-2 mobile:max-tablet:flex mobile:max-tablet:flex-col mobile:max-tablet:justify-center mobile:max-tablet:text-black"
+        >
+          <svg
+            class="mobile:max-tablet:block mobile:max-tablet:w-9 mobile:max-tablet:h-8 mobile:max-tablet:mr-2"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="1"
+              d="M4 6h16M4 12h16M4 18h16"
+            />
+          </svg>
+        </button>
+        <nav
+          id="hamburger-menu"
+          class="hidden fixed inset-0 z-50 backdrop-blur-sm overflow-hidden"
+        >
+          <button
+            id="hamburger-cross"
+            class="z-20 absolute top-14 right-2 mobile:max-tablet:flex mobile:max-tablet:flex-col mobile:max-tablet:justify-center mobile:max-tablet:text-black"
+          >
+            <svg
+              class="mobile:max-tablet:block mobile:max-tablet:w-9 mobile:max-tablet:h-8 mobile:max-tablet:mr-2"
+              viewBox="0 0 100 100"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <line
+                x1="25"
+                y1="25"
+                x2="75"
+                y2="75"
+                stroke="black"
+                stroke-width="6"
+              />
+              <line
+                x1="75"
+                y1="25"
+                x2="25"
+                y2="75"
+                stroke="black"
+                stroke-width="6"
+              />
+            </svg>
+          </button>
+          <ul
+            class="min-h-full w-9/12 absolute top-0 right-0 bg-slate-100 z-10 pt-32 pl-7"
+          >
+            <li class="pb-5">
+              <a href="" class="text-slate-500 hover:text-orange-500">Home</a>
+            </li>
+            <li class="pb-5">
+              <a href="" class="text-slate-500 hover:text-orange-500">New</a>
+            </li>
+            <li class="pb-5">
+              <a href="" class="text-slate-500 hover:text-orange-500"
+                >Popular</a
+              >
+            </li>
+            <li class="pb-5">
+              <a href="" class="text-slate-500 hover:text-orange-500"
+                >Trending</a
+              >
+            </li>
+            <li>
+              <a href="" class="text-slate-500 hover:text-orange-500"
+                >Categories</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <section
+        class="grid grid-cols-12 gap-6 mobile:max-tablet:flex mobile:max-tablet:flex-col"
+      >
+        <div class="col-span-9">
+          <img
+            src="./assets/images/image-web-3-desktop.jpg"
+            class="mobile:max-tablet:h-[300px] mobile:max-tablet:w-full mobile:max-tablet:object-cover"
+            alt="image"
+          />
+          <div class="grid grid-cols-12 pt-12">
+            <div class="col-span-5 text-5xl font-bold pr-18">
+              <h1>The Bright Future of Web 3.0?</h1>
+            </div>
+            <div class="col-span-7 text-justify pr-6 relative ml-3 mb-2">
+              <p>
+                We dive into the next evolution of the web that claims to put
+                the power of the platforms back into the hands of the people.
+                But is it really fulfilling its promise?
+              </p>
+              <button
+                class="absolute bottom-0 left-0 text-sm mt-1 px-5 py-1.5 uppercase border-2 bg-orange-500 border-none hover:bg-black hover:text-orange-500 text-white transition-colors duration-500"
+              >
+                Read more
+              </button>
+            </div>
+          </div>
+        </div>
+        <aside class="col-span-3 bg-black px-5 py-6">
+          <h2 class="text-orange-500 text-4xl mb-6">New</h2>
+          <div class="pb-4">
+            <a
+              href=""
+              class="text-white hover:text-orange-500 font-bold tracking-wider text-lg pb-1"
+              >Hydrogen VS Electric Cars</a
+            >
+            <p class="text-white text-xs font-thin pb-4">
+              Will hydrogen-fueled cars ever catch up to EVs?
+            </p>
+          </div>
+          <div class="pt-4 pb-4 border-t-white border-t">
+            <a
+              href=""
+              class="text-white hover:text-orange-500 font-bold tracking-wider text-lg pb-1"
+              >The Downsides of AI Artistry</a
+            >
+            <p class="text-white text-xs font-thin pb-4">
+              What are the possible adverse effects of on-demand AI image
+              generation?
+            </p>
+          </div>
+          <div class="pt-4 border-t-white border-t">
+            <a
+              href=""
+              class="text-white hover:text-orange-500 font-bold tracking-wider text-lg pb-1"
+              >Is VC Funding Drying Up?</a
+            >
+            <p class="text-white text-xs font-thin pb-4">
+              Private funding by VC firms is down 50% YOY. We take a look at
+              what that means.
+            </p>
+          </div>
+        </aside>
+      </section>
+      <section
+        class="grid grid-cols-3 gap-6 py-20 mobile:max-tablet:flex mobile:max-tablet:flex-col"
+      >
+        <div class="flex flex-row">
+          <img
+            class="h-40 w-40"
+            src="./assets/images/image-retro-pcs.jpg"
+            alt="old-pcs"
+          />
+          <div class="pl-4 flex justify-between flex-col">
+            <p class="text-2xl font-bold text-gray-300">01</p>
+            <a href="" class="font-bold hover:text-orange-500"
+              >Reviving Retro PCs</a
+            >
+            <p class="text-sm">
+              What happens when old PCs are given modern upgrades?
+            </p>
+          </div>
+        </div>
+        <div class="flex flex-row">
+          <img
+            class="h-40 w-40"
+            src="./assets/images/image-top-laptops.jpg"
+            alt="image-top-laptops"
+          />
+          <div class="pl-4 flex justify-between flex-col">
+            <p class="text-2xl font-bold text-gray-300">02</p>
+            <a href="" class="font-bold hover:text-orange-500"
+              >Top 10 Laptops of 2022</a
+            >
+            <p class="text-sm">Our best picks for various needs and budgets.</p>
+          </div>
+        </div>
+        <div class="flex flex-row">
+          <img
+            class="h-40 w-40"
+            src="./assets/images/image-gaming-growth.jpg"
+            alt="image-gaming-growth"
+          />
+          <div class="pl-4 flex justify-between flex-col">
+            <p class="text-2xl font-bold text-gray-300">03</p>
+            <a href="" class="font-bold hover:text-orange-500"
+              >The Growth of Gaming</a
+            >
+            <p class="text-sm">
+              How the pandemic has sparked fresh opportunities.
+            </p>
+          </div>
+        </div>
+      </section>
+    </div>
+    <footer class="pb-4 pt-20">
+      <div class="text-center font-thin text-sm">
+        Challenge by
+        <a
+          class="underline decoration-sky-500"
+          href="https://www.frontendmentor.io?ref=challenge"
+          target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">🚀 Hedz 🖤</a>.
+      </div>
+    </footer>
+    <script src="index.js"></script>
+  </body>
+</html>
